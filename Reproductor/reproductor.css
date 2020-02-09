@@ -1,0 +1,81 @@
+.fondo{
+    background-color: rgb(82, 58, 192);
+}
+
+.simbolos{
+    position: fixed;
+    cursor: pointer;
+    z-index: 100;
+    color: white;
+}
+
+#rep{
+    width: 22px;
+    top: 115px;
+    right: 17px;
+}
+
+#foward{
+    width: 20px;
+    top: 170px;
+    right: 30px;
+    -ms-transform: rotate(180deg); /* IE 9 */
+    transform: rotate(180deg);
+}
+
+#play{
+    width: 14px;
+    top: 170px;
+    right: 98px;
+}
+
+#back{
+    width: 20px;
+    top: 170px;
+    right: 160px;
+}
+
+#musicname{
+    white-space: nowrap; 
+    width: 120px; 
+    overflow: hidden;
+    text-overflow: clip; 
+    top: 118px;
+    right: 80px;
+    font-size: 13px;
+    position: fixed;
+    font-family: "roboto";
+    color: white;
+}
+
+#seekbar{
+    top: 148px;
+    right: 19px;
+    width:180px;
+    height:5px;
+    border-radius: 2px;
+    background: rgba(119, 159, 231, 0.65);
+    position: fixed;
+}
+
+#time{
+    background: white;
+    height: 5px;
+    border-radius: 2px;
+    color:rgba(119, 159, 231, 0.65);
+    max-width: 180px;
+}
+
+#reproductor{
+    z-index: 80;
+    width:210px;
+    height:100px;
+    position: fixed;
+    top: 100px;
+    right: 5px;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    display: none;
+    background: rgba(50, 57, 70, 0.65);
+    transition: all 4s ease-out;
+  }

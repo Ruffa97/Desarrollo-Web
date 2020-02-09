@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Acordeon</title>
+    <link rel="stylesheet" href="reproductor.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body class="fondo">
+    <audio id="audio" src="Beartooth - Rock Is Dead (Audio).mp3" type="audio/mp3"></audio>
+    <img src="music.png" alt="reproductor" class="simbolos" id="rep" onmouseenter="rep()">
+    <div id="reproductor" onmouseenter="rep()" onmouseleave="desaparecer()">
+        <img src="foward.png" alt="siguiente" class="simbolos" id="foward" onclick="sig()">
+        <img src="play.png" alt="play" class="simbolos" id="play" onclick="play()">
+        <img src="foward.png" alt="atras" class="simbolos" id="back" onclick="ant()">
+        <marquee behavior="scroll" direction="left" id="musicname" scrollamount="2"></marquee>
+        <div id="seekbar">
+            <div id="time"></div>
+        </div>
+    </div>
+<script>
+    var value=false;
+    var p=true;
+    var i=0;
+    var musicList=["Beartooth - Rock Is Dead (Audio).mp3","Bring Me The Horizon - sugar honey ice _ tea _Official Lyric Video_.mp3","Of Mice _ Men - Bones Exposed _Official Music Video_.mp3"];
+    var aud=document.getElementById("audio");
+    document.getElementById("musicname").innerHTML=musicList[i];
+    aud.addEventListener("ended", sig);
+     
+    function rep(){
+        value=true;
+        document.getElementById("reproductor").style.opacity="100";
+        document.getElementById("reproductor").style.display="flex";
+    }
+    function repout(){
+        if(value!=true){
+            document.getElementById("reproductor").style.display="none";
+        }
+    }
+    function desaparecer(){
+        value=false;
+        document.getElementById("reproductor").style.opacity="0";
+        setTimeout(repout,5000);
+    }
+
+    function play(){
+        if(p==true){
+            document.getElementById("play").src="pause.png";
+            audio.play();
+            p=false;
+        }
+        else{
+            document.getElementById("play").src="play.png";
+            audio.pause();
+            document
+            p=true;
+        }
+    }
+
+    function sig(){
+        if(i==musicList.length-1){
+            i=0;
+            document.getElementById("audio").setAttribute("src", musicList[i]);
+            aud=document.getElementById("audio");
+            document.getElementById("play").src="pause.png";
+            document.getElementById("musicname").innerHTML=musicList[i];
+            audio.play();
+        }
+        else{
+            i=i+1;
+            document.getElementById("audio").setAttribute("src", musicList[i]);
+            aud=document.getElementById("audio");
+            document.getElementById("play").src="pause.png";
+            document.getElementById("musicname").innerHTML=musicList[i];
+            audio.play();
+        }
+    }
+
+    function ant(){
+        if(i==0){
+            i=musicList.length-1;
+            document.getElementById("audio").setAttribute("src", musicList[i]);
+            aud=document.getElementById("audio");
+            document.getElementById("play").src="pause.png";
+            document.getElementById("musicname").innerHTML=musicList[i];
+            audio.play();
+        }
+        else{
+            i=i-1;
+            document.getElementById("audio").setAttribute("src", musicList[i]);
+            aud=document.getElementById("audio");
+            document.getElementById("play").src="pause.png";
+            document.getElementById("musicname").innerHTML=musicList[i];
+            audio.play();
+        }
+    }
+
+    aud.addEventListener("timeupdate",function(ev){
+    document.getElementById("time").style.width=(aud.currentTime*100)+"px";},true);
+    aud.addEventListener("timeupdate",function(ev){ 
+    }   ,true);
+
+    function myFunction() {
+        var x = document.getElementById("audio").duration;
+        document.getElementById("time").innerHTML = x;
+    }
+
+    /*fetch('php/apis/musicaFarinaApi.php')
+        .then(function(res){
+        return res.json();
+        })
+        .then( data =>{
+
+        console.log(data);
+
+        })
+        'admin/php/apis/blogApi.php'*/
+</script>
+</body>
