@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .item{
+            width: 150px;
+            height: 20px;
+            padding: 20px;
+            background: brown;
+            color: white;
+            margin: 10px 10px;
+            border-radius: 5px;
+        }
+        .cont{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            border: 3px solid;
+            height: 200px;
+            align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="item">
+            Menu
+        </div>
+        <div class="item">
+            Productos
+        </div>
+        <div class="item">
+            Nosotros
+        </div>
+        <div class="item">
+            Contacto
+        </div>
+    </div>
+</body>
+</html>

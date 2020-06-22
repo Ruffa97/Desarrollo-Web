@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        nav{
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            background-color: #24252a;
+            justify-content: space-between;
+            box-shadow: 2px 2px 9px 2px rgb(226, 204, 204);
+            flex-wrap: wrap;
+            color: rgb(226, 204, 204);
+            margin: -9px;
+
+        }
+
+        nav:hover{
+            transition: 500ms;
+            background-color: #5e5e5f;
+        }
+        h1{
+            margin: 0px;
+            margin-left: 85px;
+            transition: 500ms;
+        }
+        h1:hover{
+            border-bottom: 1px solid rgb(226, 204, 204);
+        }
+        nav a{
+            text-decoration: none;
+            color: inherit;
+            margin: 0 15px;
+            transition: 200ms;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0;
+        }
+        nav ul a:hover{
+            color: white;
+        }
+        ul li{
+           padding: 0;
+        }
+        #boton{
+            background-color: #0088a8;
+            border-radius: 15px;
+            padding: 5px 15px;
+            margin: 5px;
+        }
+        #boton:hover{
+            background-color: teal;
+        }
+        
+        .lista-links{
+            display: flex;
+            list-style: none;
+            margin-left: 122px;
+        }
+
+        .lista-links li a{
+            display: block;
+            width: 38px;
+            height: 38px;
+            background-image: url('descarga.png');
+            background-position-y: -40px;
+            margin: 0px;
+        }
+
+        .twitter{
+            background-position-x: 116px;
+        }
+        
+        .lista-links li a:hover{
+            transition: 500ms;
+            background-position-y: 0px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>LOGOBAKERY</h1>
+        <section class="opciones">
+            <ul>
+                <li>
+                    <a href="#">Service</a>
+                </li>
+                <li>
+                    <a href="#">Proyects</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#" id="boton">Contact</a>
+                </li>
+            </ul>
+        </section>
+        <div>
+            <ul class="lista-links">
+                <li>
+                    <a class="facebook" href="#"></a>
+                </li>
+                <li>
+                    <a class="twitter" href="#"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>

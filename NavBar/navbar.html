@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <style>
+        body{
+            font-family: "Proxima Nova",-apple-system,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff159;
+        }
+        nav ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a{
+            text-decoration: none;
+            margin: 0 10px;
+            color: #736c28;
+            transition: 200ms;
+        }
+        nav a:hover{
+            color: #242217;
+            border-bottom: 3px solid #242217;
+        }
+        nav ul{
+            list-style: none;
+            padding: 0;
+        }
+        h1{
+            margin: 0 15px;
+        }
+        #right{
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <section>
+            <ul>
+                <h1>RUFFA</h1>
+                <li>
+                    <a href="#">Ofertas</a>
+                </li>
+                <li>
+                    <a href="#">Historial</a>
+                </li>
+                <li>
+                    <a href="#">Tienda</a>
+                </li>
+                <li>
+                    <a href="#">Perfil</a>
+                </li>
+            </ul>
+        </section>
+        <section id="right">
+            <ul>
+                <li>
+                    <a href="#">Twitter</a>
+                </li>
+                <li>
+                    <a href="#">Facebook</a>
+                </li>
+            </ul>
+        </section>
+    </nav>
+</body>
+</html>
