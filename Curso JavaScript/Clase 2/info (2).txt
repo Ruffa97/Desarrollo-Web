@@ -1,0 +1,40 @@
+LINKS : 
+
+
+https://docs.emmet.io/cheat-sheet/
+http://vanilla-js.com/
+https://trends.google.com/trends/explore?date=today%205-y&geo=US&q=react,%2Fm%2F0268gyp
+https://caniuse.com/
+http://es6-features.org/
+https://developer.mozilla.org/en-US/docs/Web/Events
+https://www.youtube.com/watch?v=cCOL7MC4Pl0&t=713s
+https://www.youtube.com/channel/UCl0hPcsUmeld49qmWWSQKOg/videos
+https://www.youtube.com/watch?v=XQM0K6YG18s&t=869s
+https://drive.google.com/drive/folders/1mwEiJnFE0wBzEN8XxsMUslHoWzBaPmIj?usp=sharing
+https://exploringjs.com/impatient-js/
+https://www.khanacademy.org/computing/computer-programming
+https://threejs.org/
+
+
+ul>li.item#item${item $}*3
+
+
+OPERADOR REST / SPREAD (...)
+
+
+Agarro datos sueltos y los envuelvo en un array
+
+function foo(...parametros){
+    //Parametros vale un array con todas las cosas que me pasas cuando ejecutan la funcion
+    console.log(parametros)
+}
+
+foo(1,2,3)
+
+
+
+Agarro datos ya envueltos en un array y los separo individualmente
+let arr = [1,2,3,4]
+[...arr]
+
+

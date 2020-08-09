@@ -1,0 +1,8 @@
+LINKS : 
+
+
+https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
+https://developer.mozilla.org/en-US/docs/Web/API
+
+

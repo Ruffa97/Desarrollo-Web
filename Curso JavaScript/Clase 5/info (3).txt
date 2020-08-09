@@ -1,0 +1,87 @@
+
+LINKS
+
+https://www.npmjs.com/package/axios
+https://www.youtube.com/watch?v=8aGhZQkoFbQ
+https://www.youtube.com/watch?v=cCOL7MC4Pl0&t=129s
+http://latentflip.com/
+https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+
+
+
+STATUS CODES 
+
+101 Switching Protocols
+200 OK
+201 Created
+302 Found
+304 Not Modified
+400 Bad Request
+401 Unauthorized 
+403 Forbidden
+404 Not Found
+405 Method Not Allowed
+500 Internal Server Error
+
+
+
+MITM
+
+
+
+let arr = [1,2,3,4]
+
+STATEMENT
+
+//let a = if(true){return a + 1} else { return a + 2}
+
+
+let resultado = []
+
+arr.forEach((elemento,indice)=>{
+    resultado.push(elemento + 1)
+})
+
+console.log(resultado)
+
+
+
+
+EXPRESSION
+
+
+let a = true ? a + 1 : a + 2
+
+
+Array.map(callback Function) => Array de la misma longitud 
+
+let resultado = arr.map((elemento,indice)=>{
+    return elemento + 1 
+})
+
+
+
+Array.filter(()=>{})
+Array.sort(()=>{})
+Array.reduce(()=>{})
+
+
+
+
+
+
+JSON.parse(json String) => Object
+JSON.stringify(json Object) => String
+
+
+History + history.pushState() + popstate
+
+
+location.hash + hashchange
+
+
+
+URL/EndPoints/Resource/function : Cada uno de los recursos que a vos te dejan pedir en esta API junto con su URL
+
+API REST : XML y JSON : El formato en que voy a obtener la respuesta
+

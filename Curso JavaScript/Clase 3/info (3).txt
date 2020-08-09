@@ -1,0 +1,11 @@
+LINKS : 
+
+https://material.io/
+https://getmdl.io/components/
+https://www.muicss.com/
+https://semantic-ui.com/
+https://ant.design/docs/react/introduce
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types
+
+
+PROPAGACION DE EVENTOS : es la manera en que un evento se propaga a través del DOM. Existen dos, bubbling y capturing
