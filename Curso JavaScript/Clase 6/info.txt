@@ -1,0 +1,9 @@
+
+Hacer ejemplo de como pasar callbacks como parametros
+
+
+
+https://tympanus.net/
+https://typeitjs.com/
+https://animejs.com/
+https://tympanus.net/codrops/2013/12/12/progress-button-styles/
